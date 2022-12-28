@@ -14,13 +14,17 @@ maintainer is expected to (1) submit and review GitHub pull requests and
 (2) open issues or
 [submit vulnerability reports](https://github.com/in-toto/in-toto#security-issues-and-bugs).
 A maintainer has the authority to approve or reject pull requests submitted by
-contributors. Any maintainer may also interact with the CNCF on behalf of the
-project. If a sub-project or implementation has specific responsibilities for
-its maintainers, they are listed in that project's MAINTAINERS.txt file.
+contributors. If a sub-project or implementation has specific responsibilities
+for its maintainers, they are listed in that project's MAINTAINERS.txt file.
+The maintainers of the in-toto specification, listed in this repository's
+[MAINTAINERS.txt](MAINTAINERS.txt) file, can interact with the CNCF on behalf
+of the in-toto project.
 
 The project's Consensus Builder (CB), who is also granted all maintainer 
 privileges and responsibilities, is Santiago Torres-Arias 
-<santiagotorres@purdue.edu, @SantiagoTorres>.
+<santiagotorres@purdue.edu, @SantiagoTorres>.  The CB reevaluates the status
+of every maintainer of in-toto's specifications, implementations, and other
+sub-projects annually.
 
 ## Changes in maintainership
 
@@ -33,13 +37,6 @@ the CB, in consultation with the project maintainers.  Emeritus maintainers are
 listed in the MAINTAINERS.txt file as acknowledgment for their prior service to 
 the project, but no longer have code review or other maintainer privileges for 
 the project.
-
-## Specification changes (ITEs) 
-
-The [in-toto enhancement (ITE)](https://github.com/in-toto/ITE) approval
-process, which  changes the in-toto specification, is listed in
-[ITE-1](https://github.com/in-toto/ITE/blob/master/ITE/1/README.adoc_). Future
-changes in the ITE process will be managed through new ITEs.
 
 ## Changes in governance
 The CB supervises changes in governance, in consultation with project
