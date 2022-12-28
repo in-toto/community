@@ -1,4 +1,4 @@
-# in-toto
+![in-toto Logo](images/in-toto-logo.png "in-toto Logo")
 
 in-toto provides a framework to protect the integrity of the software supply
 chain. It does so by verifying that each task in the chain is carried out as
