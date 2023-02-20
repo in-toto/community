@@ -2,14 +2,7 @@ The in-toto Project succeeds because of an open, inclusive, and respectful commu
 
 ## Code of Conduct
 
-The in-toto community abides by the Cloud Native Computing Foundation's [code of conduct](/CODE-OF-CONDUCT.md). An excerpt follows:
-
-> _As contributors and maintainers of this project, and in the interest of fostering an open and
-> welcoming community, we pledge to respect all people who contribute through reporting issues,
-> posting feature requests, updating documentation, submitting pull requests or patches, and other
-> activities._
-
-The in-toto community members represent the project and their fellow contributors. We value our community tremendously, and we'd like to keep cultivating a friendly and collaborative environment for our contributors and users. We want everyone in the community to have positive experiences.
+See [CODE-OF-CONDUCT.md](/CODE-OF-CONDUCT.md).
 
 ## Project Roles
 
@@ -45,10 +38,10 @@ The process for nominating and approving Maintainers is:
 
 ### The in-toto Steering Committee (ITSC)
 
-The in-toto Project is governed by the [ITSC](https://github.com/in-toto/community/blob/main/ITSC.md) that is exclusively responsible for in-toto's [specification](https://github.com/in-toto/docs), [enhancements](https://github.com/in-toto/in-toto/ite), and the Project's strategic goals and direction. ITSC members have final authority over:
+The in-toto Project is governed by the [ITSC](https://github.com/in-toto/community/blob/main/ITSC.md) that is exclusively responsible for in-toto's [specification](https://github.com/in-toto/docs), [enhancements](https://github.com/in-toto/in-toto/ite), the [attestation framework](https://github.com/in-toto/attestation), and the Project's strategic goals and direction. ITSC members have final authority over:
 
 * Technical direction of the Project and subprojects
-* Project governance and process (this document).
+* Project governance and process (this document)
 * Contribution policy
 * Conflict resolution
 
@@ -81,6 +74,10 @@ Documentation changes, bugfixes, or other minor changes that do not significantl
 
 New or changed functionality requires two (2) maintainer approvals.
 
+**All governance changes must be approved by a majority of the ITSC**
+
+Changes to the processes defined here and elsewhere that detail in-toto's governance structure must be approved by a majority of the seated ITSC in a public vote.
+
 ## Subprojects
 
 The in-toto Project has various Subprojects, which focus on different aspects of the ecosystem (e.g., client language implementations, extensions to the specification, attestation types). Subprojects provide an avenue for face-to-face discussion of important design changes with key stakeholders. Each Subproject may be run by a maintainer group (e.g., Attestation Maintainers or ITE Editors) who are responsible for the logistics of running the meeting, and for ensuring the group reaches consensus on any issues raised. Active Subprojects  are [listed here](/README.md#subprojects), further information can be found on the subproject's site.
@@ -88,14 +85,12 @@ The in-toto Project has various Subprojects, which focus on different aspects of
 ### Responsibilities of the Subproject Leads
 
 * Organize regular meetings as necessary, ideally at least for 30 minutes every two weeks.
-* Announce meeting agenda and minutes after each meeting on their Subproject mailing list.
+* Create and moderate a Slack channel on the CNCF workspace for the Subproject. The channel name must use the following format: `in-toto-<subproject name>`.
+* Announce meeting agenda and minutes after each meeting on the in-toto mailing list.
 * Keep up-to-date meeting notes, linked from the Subproject page in the community repository.
-* Record Subproject meetings and make said recordings publicly available.
-* Ensure the Subproject mailing list and Slack channel are archived.
+* Optionally record Subproject meetings and make said recordings publicly available.
 * Report activity in the monthly community meeting.
 * Use the above forums as the primary means of working, communicating, and collaborating, as opposed to private e-mails and meetings.
-
-To propose a new Subproject on a particular topic, [please follow our guidelines](/community/sig-creation-procedure.md).
 
 ## License
 
