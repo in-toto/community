@@ -1,0 +1,25 @@
+# ITSC member election process
+
+This document outlines the current process for electing new ITSC members.
+
+## Forming the ITSC
+
+The current consensus builder (Santiago Torres-Arias, Purdue University, @SantiagoTorres) is charged with:
+
+1. Identifying candidates that nominated themselves as part of the initial cohort for the ITSC.
+2. Carrying out elections and announcing the winners.
+
+## Election process
+
+Candidates that are self-nominated will be included in the list for members to elect.
+The platfrom [CiVS condorcet](https://civs1.civs.us/) will be used to carry out *ranked choice voting*.
+
+## Abuse
+
+The consensus builder will discuss and handle abusive votes by removing them from the tally in an ad-hoc manner.
+He sill also publicize his thought process and manage appeals by bringing them to the community for discussion.
+
+## Updating this process
+
+This election process is to be updated after the formation of the ITSC.
+
