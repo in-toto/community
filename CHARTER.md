@@ -40,7 +40,7 @@ Elections may take place in no less than every six months since the previous ele
 
 The definition of active engagement is purposefully a loose one, and it is recognized that the bar may be met without adhering to the spirit of the rule. As such, individuals who meet the requirements in letter but not in spirit may, at the discretion of the ITSC, not be invited to nominate or vote in any given election.
 
-Conversely, it is also recognized that the stated definition is not perfect, and that there may be individuals with contributions to the community and/or projects that do not meet these requirements. The ITSC is happy to consider such cases, and will make exceptions when fit. Please email ssc@spiffe.io for more information.
+Conversely, it is also recognized that the stated definition is not perfect, and that there may be individuals with contributions to the community and/or projects that do not meet these requirements. The ITSC is happy to consider such cases, and will make exceptions when fit. 
 
 Each voting community member may choose up to two nominees per seat, and cast one ranked vote. The process to call for an election and how to carry out an election are to be determined after the ITSC is formed.
 
