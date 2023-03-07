@@ -27,7 +27,7 @@ To ensure the long-term success of in-toto by providing leadership, guidance, an
 
 ## ITSC Seat Election and Term
 
-The ITSC comprises five seats. All seats are equal in their capacity and requirements.
+The ITSC comprises at least five seats. All seats are equal in their capacity and requirements.
 
 ITSC seats are assigned to individuals and not companies. Incumbents retain their ITSC membership in the event that their affiliation changes. If the affiliation change results in a violation of the corporate diversity policy as defined by the in-toto project governance, then a vacancy shall be forced. All incumbents must disclose their affiliation.
 
