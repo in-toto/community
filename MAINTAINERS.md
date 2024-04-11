@@ -30,3 +30,7 @@ Maintainers:
     Email: aditya.sirish@nyu.edu
     GitHub username: @adityasaky
     PGP fingerprint: E329 4129 9CB8 C0D9 3DCF 27AC B831 10D0 1254 5604
+
+  Trishank Karthik Kuppusamy
+    Email: trishank.kuppusamy@datadoghq.com
+    GitHub username: @trishankatdatadog
