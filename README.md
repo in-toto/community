@@ -73,7 +73,7 @@ Links:
 * [GitHub Repository](https://github.com/in-toto/in-toto-rs)
 * [Good First Issues](https://github.com/in-toto/in-toto-rs/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
 
-## Other Repositories of Note
+## Adopters and other repositories of note
 
 in-toto is integrated into several other ecosystems and complementary software
 supply chain security efforts. An inexhaustive list of integrations and
