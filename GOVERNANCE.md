@@ -1,8 +1,8 @@
-The in-toto Project succeeds because of an open, inclusive, and respectful community. Ideas and contributions are accepted based on their technical merit and alignment with project objectives, scope, and design principles. This document lists a non-exclusive set of guidelines to help ensure fairness and transparency in managing the in-toto Project.
+The in-toto Project succeeds because of an open, inclusive, and respectful community. Ideas and contributions are accepted based on their technical merit and alignment with project objectives, scope, and design principles. We have a deep commitment to being a [Vendor Neutral](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) Project in the CNCF. This document lists a non-exclusive set of guidelines to help ensure fairness and transparency in managing the in-toto Project.
 
 ## Code of Conduct
 
-See [CODE-OF-CONDUCT.md](/CODE-OF-CONDUCT.md).
+All participants agree to both the in-toto [CODE-OF-CONDUCT.md](/CODE-OF-CONDUCT.md) and the [CNCF Code of Conduct](https://github.com/cncf/foundation/blob/master/code-of-conduct.md).
 
 ## Project Roles
 
@@ -53,8 +53,10 @@ The ITSC adheres to the following:
 * Each ITSC member's term is 24 months.
 * There is no limit to the number of terms an ITSC member can serve.
 * ITSC members may remove themselves voluntarily at any time.
+* A former ITSC member becomes an Emeritus member (which is an honorary title with no responsibilities, rights, or bearing on other aspects of governance) after they cease to be an ITSC member
 
-For more information about the ITSC, please refer to the ITSC Charter
+
+For more information about the ITSC, please refer to the [ITSC Charter](CHARTER.md)
 
 ## Decision Making
 
@@ -91,7 +93,10 @@ The in-toto Project has various Subprojects, which focus on different aspects of
 * Optionally record Subproject meetings and make said recordings publicly available.
 * Report activity in the monthly community meeting.
 * Use the above forums as the primary means of working, communicating, and collaborating, as opposed to private e-mails and meetings.
+* Abide by the guidance of the CNCF with respect to [Vendor Neutrality](https://contribute.cncf.io/maintainers/community/vendor-neutrality/) for communications related to in-toto or the subprojects of in-toto
+
 
 ## License
 
-All software is licensed under the [Apache License version 2.0](https://www.apache.org/licenses/LICENSE-2.0), and all documentation is licensed under the [Creative Commons License version 4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
+All software is licensed under the [Apache License version 2.0](https://www.apache.org/licenses/LICENSE-2.0), and all documentation is licensed under the [Creative Commons License version 4.0](https://creativecommons.org/licenses/by/4.0/legalcode), and the specification is licensed under the [Community Specification License](https://github.com/CommunitySpecification/Community_Specification).
+
