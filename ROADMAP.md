@@ -155,8 +155,8 @@ contributing guidelines, and more.
 We have a new release schedule for our reviews as our roadmap now applies to the
 calendar year.
 
-- End of April 2023
-- End of August 2023
+- [End of April 2023](/roadmap-reviews/2023/review_1_april_23.md)
+- [End of August 2023](/roadmap-reviews/2023/review_2_august_23.md)
 - End of December 2023
 
 We will use these slots to release our roadmap reviews and depending on the
