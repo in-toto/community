@@ -38,3 +38,51 @@ detailed in their repositories. For implementations, this includes information
 such as the name of the development branch and any additional checks pertaining
 to that project. For ITEs, the process of submitting a new proposal is described
 in ITE-1.
+
+## How to Submit a Pull Request (PR)
+
+1. **Fork the Repository**
+   - Click the "Fork" button at the top right of the repository page on GitHub.
+
+2. **Clone Your Fork**
+   - Clone your fork to your local machine:
+     ```sh
+     git clone https://github.com/your-username/in-toto.git
+     ```
+
+3. **Create a New Branch**
+   - Create a new branch for your changes:
+     ```sh
+     git checkout -b my-feature-branch
+     ```
+
+4. **Make Your Changes**
+   - Make your changes in the code or documentation.
+
+5. **Sign and Commit Your Changes**
+   - Commit your changes with a descriptive message:
+     ```sh
+     git add .
+     git commit -s -m "Description of my changes"
+     ```
+
+6. **Push Your Changes**
+   - Push your changes to your forked repository:
+     ```sh
+     git push origin my-feature-branch
+     ```
+
+7. **Create a Pull Request**
+   - Go to the original repository on GitHub and click "New Pull Request".
+   - Select your branch and provide a detailed description of your changes.
+
+## Finding Good First Issues
+
+1. **Navigate to Issues**
+   - Go to the [issues](https://github.com/in-toto/in-toto/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) section of the repository on GitHub.
+
+2. **Filter Issues**
+   - Use labels like "good first issue" or "help wanted" to find issues suitable for beginners.
+
+3. **Select an Issue**
+   - Choose an issue that matches your skills and interests, and leave a comment expressing your intent to work on it.
