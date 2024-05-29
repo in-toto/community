@@ -9,7 +9,7 @@ The process is meant to be self-serve but if you experience any difficulties rea
 Please read and follow the guidelines. Incomplete submissions will be rejected. 
 
 **Content criteria & guidelines**
-The community thanks you for your interest in contributing content to the TUF community blog. Here are examples of content to create and criteria to follow to avoid rejection. 
+The community thanks you for your interest in contributing content to the in-toto community blog. Here are examples of content to create and criteria to follow to avoid rejection. 
 
 **Articles about The Update Framework**
 * Technical content and how-to’s.
