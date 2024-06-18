@@ -14,7 +14,7 @@ They are:
   corresponding GitHub repositories
 
 Any developer or user submitting these types of changes is considered an in-toto
-contributor. Over time, as described in [in-toto's Governance](GOVERNANCE.md), 
+contributor. Over time, as described in [in-toto's Governance](GOVERNANCE.md),
 contributors may be promoted to maintainers of relevant implementations or
 sub-projects.
 
@@ -44,40 +44,3 @@ in ITE-1.
 For any new implementation, reference documentation should be included in its repository on GitHub, following documentation best practices specific to the implementation language. 
 
 To ensure comprehensive documentation, refer to the [Python Reference Implementation's reference docs](http://in-toto.readthedocs.io) as a guideline.
-
-### Instructions for Editors
-
-If you need to update the reference documentation, follow these steps:
-
-1. **Locate the Documentation Source:**
-   The source files for the reference documentation are found in the `doc/source` directory of the implementation repository.
-
-```
-implementation-repo/
-├── doc/
-│ ├── source/
-│ ├── Makefile
-│ └── ...
-└── src/
-└── ...
-```
-
-2. **Make Your Changes:**
-Edit the necessary source files in the `doc/source` directory. Ensure your changes comply with the project's documentation standards.
-
-3. **Build the Documentation:**
-Use the provided `Makefile` in the `doc` directory to generate the updated documentation. Typically, you can run:
-
-```sh
-make html
-```
-
-4. **Submit a Pull Request:**
-Submit a pull request with your changes. Your PR should include:
-
-* A description of the changes made.
-* Any relevant issue numbers.
-* A link to the contribution policy.
-
-5. **Review and Approval:**
-Changes to the reference documentation are reviewed by the maintainers. Ensure you follow the project's contribution guidelines for a smooth review process.
