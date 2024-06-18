@@ -41,6 +41,6 @@ in ITE-1.
 
 ## Reference Documentation Policy
 
-For any new implementation, reference documentation should be included in the implementation repository on GitHub. Specifically, the sources and generation information should be located in a `doc` subdirectory within the implementation repository.
+For any new implementation, reference documentation should be included in its repository on GitHub, following documentation best practices specific to the implementation language. 
 
-To ensure comprehensive documentation, refer to the [Python Reference Implementation's reference docs](https://github.com/in-toto/in-toto/tree/develop/doc) as a guideline for the necessary details. These reference docs are generated using source files and a makefile located in the implementation's `doc` subdirectory.
+To ensure comprehensive documentation, refer to the [Python Reference Implementation's reference docs](http://in-toto.readthedocs.io) as a guideline.
