@@ -38,3 +38,9 @@ detailed in their repositories. For implementations, this includes information
 such as the name of the development branch and any additional checks pertaining
 to that project. For ITEs, the process of submitting a new proposal is described
 in ITE-1.
+
+## Reference Documentation Policy
+
+For any new implementation, reference documentation should be included in its repository on GitHub, following documentation best practices specific to the implementation language. 
+
+To ensure comprehensive documentation, refer to the [Python Reference Implementation's reference docs](http://in-toto.readthedocs.io) as a guideline.
