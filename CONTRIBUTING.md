@@ -38,3 +38,20 @@ detailed in their repositories. For implementations, this includes information
 such as the name of the development branch and any additional checks pertaining
 to that project. For ITEs, the process of submitting a new proposal is described
 in ITE-1.
+
+## Reference Documentation Policy
+
+For any new implementation, reference documentation should be included in the implementation repository on GitHub. Specifically, the sources and generation information should be located in a `doc` subdirectory within the implementation repository.
+
+To ensure comprehensive documentation, refer to the [Python Reference Implementation's reference docs](https://github.com/in-toto/in-toto/tree/develop/doc) as a guideline for the necessary details. These reference docs are generated using source files and a makefile located in the implementation's `doc` subdirectory.
+
+#### Example Structure
+```
+implementation-repo/
+├── doc/
+│ ├── source/
+│ ├── Makefile
+│ └── ...
+└── src/
+└── ...
+```
