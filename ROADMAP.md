@@ -30,48 +30,48 @@ Several major products and repositories now have support for in-toto attestation
 
 ### Specification and In-toto Enhancements (ITEs)
 
-- The in-toto v1.0 Specification was tagged June 5th 2023
+- The in-toto v1.0 [Specification](https://github.com/in-toto/specification/blob/v1.0/in-toto-spec.md) was tagged June 5th 2023
 - ITEs to support layouts with the attestation framework were merged as `Draft`
-  - ITE-10: Supporting Contextual in-toto Attestations in Layouts
-  - ITE-11: Verifying Attributes in in-toto Attestations
+  - [ITE-10](https://github.com/in-toto/ITE/tree/master/ITE/10): Supporting Contextual in-toto Attestations in Layouts
+  - [ITE-11](https://github.com/in-toto/ITE/tree/master/ITE/11): Verifying Attributes in in-toto Attestations
 
 ### Attestations
 
 - New Predicate Types
-  - Software Supply Chain Attribute Integrity (SCAI)
-  - Release
-  - Reference
+  - Software Supply Chain Attribute Integrity ([SCAI](https://github.com/in-toto/attestation/blob/main/spec/predicates/scai.md))
+  - [Release](https://github.com/in-toto/attestation/blob/main/spec/predicates/release.md)
+  - [Reference](https://github.com/in-toto/attestation/blob/main/spec/predicates/reference.md)
 - Protobuf Language Bindings available
-  - Go
-  - Java
-  - Python
+  - [Go](https://github.com/in-toto/attestation/tree/main/go)
+  - [Java](https://github.com/in-toto/attestation/tree/main/java)
+  - [Python](https://github.com/in-toto/attestation/tree/main/python)
 
 ### Witness
 
-- Donation of the project to in-toto during KubeCon '23 - Chicago
-- Improvement of CLO Monitor Scores to 99+
+- [Donation](https://github.com/in-toto/community/issues/17) of the project to in-toto during KubeCon '23 - Chicago
+- Improvement of [CLO Monitor Scores](https://clomonitor.io/projects/cncf/in-toto#witness) to 99+
 - Support for generating new types of attestations:
-  - SLSA Attestor
-  - Link Attestor
-  - Jenkins Attestor
-  - SBOM Attestor
-  - VEX Attestor
+  - [SLSA Attestor](https://witness.dev/docs/docs/attestors/slsa)
+  - [Link Attestor](https://witness.dev/docs/docs/attestors/link)
+  - [Jenkins Attestor](https://github.com/in-toto/go-witness/pull/323)
+  - [SBOM Attestor](https://witness.dev/docs/docs/attestors/sbom)
+  - [VEX Attestor](https://witness.dev/docs/docs/attestors/vex)
 - Support for new Key Management Systems (KMS)
-  - AWS KMS
-  - GCP KMS
-- New documentation website
+  - [AWS KMS](https://witness.dev/docs/docs/signers/kms#aws)
+  - [GCP KMS](https://witness.dev/docs/docs/signers/kms#gcp)
+- New documentation [website](https://witness.dev/)
 
 ### Archivista
 
-- Donation of the project to in-toto during KubeCon '23 - Chicago
-- Improvement of CLO Monitor Scores to 95+
-- Helm charts for deployment
-- Support for eventing on attestation uploads
-- Storing of Witness Policies
+- [Donation](https://github.com/in-toto/community/issues/18) of the project to in-toto during KubeCon '23 - Chicago
+- Improvement of [CLO Monitor Score](https://clomonitor.io/projects/cncf/in-toto#archivista) to 95+
+- Helm [charts](https://github.com/in-toto/archivista/tree/main/chart) for deployment
+- Support for [eventing](https://github.com/in-toto/archivista/pull/377) on attestation uploads
+- Storing of Witness [Policies](https://github.com/in-toto/archivista/pull/251)
 
 ### Others
 
-- Docs assessment from CNCF Tech Docs group
+- Docs [assessment](https://github.com/cncf/techdocs/blob/main/analyses/0009-in-toto/README.md) from CNCF Tech Docs group
 
 ## Near and Mid-term Work
 
