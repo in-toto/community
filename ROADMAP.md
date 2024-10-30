@@ -1,7 +1,7 @@
 # Roadmap
 
 _Note: Previous roadmaps can be found with the roadmap reviews for that period.
-[Link to Roadmap 2022](/roadmap-reviews/2023/ROADMAP.md)_
+[Link to Roadmap 2023](/roadmap-reviews/2023/ROADMAP.md)_
 
 ## Ongoing Work
 
