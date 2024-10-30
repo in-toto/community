@@ -1,18 +1,18 @@
 # Roadmap
 
 _Note: Previous roadmaps can be found with the roadmap reviews for that period.
-[Link to Roadmaps](/roadmap-reviews/)_
+[Link to Roadmap 2022](/roadmap-reviews/2023/ROADMAP.md)_
 
 ## Ongoing Work
 
 Cross-collaboration with many external groups and projects, including:
 
-- OpenSSF and  groups
+- OpenSSF and groups
   - SBOMit
   - GitTUF
   - Protobom
 - IETF
-  - SCITT
+  - Supply Chain Integrity, Transparency, and Trust (SCITT) Working Group
 - Package Repositories
   - PyPi
   - RubyGems
