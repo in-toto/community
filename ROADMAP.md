@@ -23,10 +23,9 @@ Cross-collaboration with many external groups and projects, including:
 
 Several major products and repositories now have support for in-toto attestations, including:
 
-- NPM
-- Homebrew
-- GitHub
-- GitLab
+- [NPM](https://github.blog/security/supply-chain-security/introducing-npm-package-provenance/)
+- [Homebrew](https://blog.trailofbits.com/2024/05/14/a-peek-into-build-provenance-for-homebrew/)
+- [GitHub](https://github.blog/changelog/2024-06-25-artifact-attestations-is-generally-available/)
 
 ### Specification and In-toto Enhancements (ITEs)
 
@@ -72,6 +71,8 @@ Several major products and repositories now have support for in-toto attestation
 ### Others
 
 - Docs [assessment](https://github.com/cncf/techdocs/blob/main/analyses/0009-in-toto/README.md) from CNCF Tech Docs group
+- [Donation](https://github.com/in-toto/community/issues/14) of [attestation-verifier](https://github.com/in-toto/attestation-verifier)
+- [Donation](https://github.com/in-toto/community/issues/11) of [scai-demos](https://github.com/in-toto/scai-demos)
 
 ## Near and Mid-term Work
 
