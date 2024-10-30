@@ -9,7 +9,7 @@ Cross-collaboration with many external groups and projects, including:
 
 - OpenSSF and groups
   - SBOMit
-  - GitTUF
+  - gittuf
   - Protobom
 - IETF
   - Supply Chain Integrity, Transparency, and Trust (SCITT) Working Group
