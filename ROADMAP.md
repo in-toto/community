@@ -21,7 +21,7 @@ Cross-collaboration with many external groups and projects, including:
 
 ### Ecosystem
 
-Several major products and services now have support for in-toto attestations, including:
+Several major products and repositories now have support for in-toto attestations, including:
 
 - NPM
 - Homebrew
