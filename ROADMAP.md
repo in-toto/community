@@ -14,7 +14,7 @@ Cross-collaboration with many external groups and projects, including:
 - IETF
   - Supply Chain Integrity, Transparency, and Trust (SCITT) Working Group
 - Package Repositories
-  - PyPi
+  - PyPI
   - RubyGems
 
 ## Recently Completed Work
