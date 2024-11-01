@@ -1,164 +1,114 @@
-Roadmap
-=======
+# Roadmap
 
 _Note: Previous roadmaps can be found with the roadmap reviews for that period.
-[Link to Roadmap 2022](/roadmap-reviews/2022/ROADMAP.md)_
+[Link to Roadmap 2023](/roadmap-reviews/2023/ROADMAP.md)_
 
-This document spans the Roadmap for the in-toto project for the 2023 calendar
-year. As before, the theme of this year's efforts are focused on extending
-in-toto through new and existing ITEs, and adding support for them in the
-implementations we maintain.
+## Ongoing Work
 
-## in-toto v1.0
+Cross-collaboration with many external groups and projects, including:
 
-The last tagged release of the in-toto specification was v0.9. We are gearing
-up to tag v1.0 of the specification. This process entails addressing some long
-standing discussions and issues, and several rounds of reviews to catch any
-inconsistencies and errors that may require breaking changes to fix later.
-Apart from these processes, there aren't any major blockers to the
-specification reaching the 1.0 milestone -- it has been stable for a significant
-amount of time and much of in-toto's development happens through in-toto
-Enhancements (ITEs). We expect the v1.0 release to happen in the first review
-period of this roadmap.
+- OpenSSF and groups
+  - SBOMit
+  - gittuf
+  - Protobom
+- IETF
+  - Supply Chain Integrity, Transparency, and Trust (SCITT) Working Group
+- Package Repositories
+  - PyPI
+  - RubyGems
 
-Note that this planned v1.0 release checkpoints in-toto at its pre-attestation
-stage. As the attestation framework matures and reaches stability, it is likely
-to have its own tagged releases, either as a standalone specification or as part
-of the main specification's future releases.
+## Recently Completed Work
 
-## ITEs
+### Ecosystem
 
-Several important ITEs were introduced in the last few years.
-[ITE-2](https://github.com/in-toto/ITE/blob/master/ITE/2) and
-[ITE-3](https://github.com/in-toto/ITE/blob/master/ITE/3)
-discussed how to use TUF as a root of trust for in-toto metadata.
-[ITE-4](https://github.com/in-toto/ITE/blob/master/ITE/4)
-introduced the notion of non-file artifacts in in-toto, a semantic that is very
-useful in capturing attestations about abstract artifacts and processes such as
-GitHub pull requests and reviews that are prevalent in real world software
-supply chains. [ITE-5](https://github.com/in-toto/ITE/blob/master/ITE/5)
-disassociated the signature wrapper from the in-toto specification and
-recommended a switch to DSSE.
-[ITE-6](https://github.com/in-toto/ITE/blob/master/ITE/6) perhaps had the most
-impact of all the ITEs, introducing the in-toto Attestation framework. This was
-paired with [ITE-9](https://github.com/in-toto/ITE/blob/master/ITE/9) that
-described a process for the in-toto community to introduce new attestation
-types, and established the in-toto attestation maintainers, a group of industry
-stakeholders who review and provide feedback about new attestation types.
-[ITE-7](https://github.com/in-toto/ITE/blob/master/ITE/7) added support for
-creating and verifying signatures using X.509 certificates.
+Several major products and repositories now have support for in-toto attestations, including:
 
-### ITE-6, ITE-9, and Policies for in-toto Attestations
+- [NPM](https://github.blog/security/supply-chain-security/introducing-npm-package-provenance/)
+- [Homebrew](https://blog.trailofbits.com/2024/05/14/a-peek-into-build-provenance-for-homebrew/)
+- [GitHub](https://github.blog/changelog/2024-06-25-artifact-attestations-is-generally-available/)
 
-This year, we are working towards having ITE-6 and ITE-9 accepted. ITE-6 is
-already used in a number of applications, most notably by the SLSA
-specification. We believe it's time to accept ITE-6 and continue to develop the
-attestation framework. Similarly, ITE-9 is still a draft but the process
-described in it is already being applied to several new attestation type
-proposals. The attestation maintainers have reviewed proposals for runtime
-traces and the Software Supply Chain Attribute Integrity (SCAI) specification.
-We expect both ITEs to be accepted in the first review period of this roadmap.
+### Specification and In-toto Enhancements (ITEs)
 
-Besides these existing ITEs, a key aim for this year is to introduce a new ITE
-that proposes modifications to in-toto layouts. As it stands, in-toto layouts
-cannot be used to verify ITE-6 attestations. With ITE-6 close to being accepted,
-the focus is now on closing this gap so that in-toto attestations can be
-verified using our verification workflows. Alongside defining new layout
-schemas, we hope to revive the work on ITE-8 to introduce a library of in-toto
-policies. Early drafts of the new ITE should be available for the community to
-peruse in the first review period, and depending on the capabilities it
-introduces, ITE-8 will likely be revived right after.
+- The in-toto v1.0 [Specification](https://github.com/in-toto/specification/blob/v1.0/in-toto-spec.md) was tagged June 5th 2023
+- ITEs to support layouts with the attestation framework were merged as `Draft`
+  - [ITE-10](https://github.com/in-toto/ITE/tree/master/ITE/10): Supporting Contextual in-toto Attestations in Layouts
+  - [ITE-11](https://github.com/in-toto/ITE/tree/master/ITE/11): Verifying Attributes in in-toto Attestations
 
-### Hierarchy for Attestation Types and the Predicate Dictionary
+### Attestations
 
-In the last year, we have discussed at several times if we want to establish a
-hierarchy for in-toto attestation types. As more attestations are introduced for
-various contexts, some may be derived or may extend others. As such, one of the
-aims for this year is to formally study how to handle these scenarios.
+- New Predicate Types
+  - Software Supply Chain Attribute Integrity ([SCAI](https://github.com/in-toto/attestation/blob/main/spec/predicates/scai.md))
+  - [Release](https://github.com/in-toto/attestation/blob/main/spec/predicates/release.md)
+  - [Reference](https://github.com/in-toto/attestation/blob/main/spec/predicates/reference.md)
+- Protobuf Language Bindings available
+  - [Go](https://github.com/in-toto/attestation/tree/main/go)
+  - [Java](https://github.com/in-toto/attestation/tree/main/java)
+  - [Python](https://github.com/in-toto/attestation/tree/main/python)
 
-Another closely related discussion was about the creation of a "predicate
-dictionary". The idea here was to identify how different attestation types
-overlap, and when they can be used interchangeably. For example, a SLSA
-Provenance attestation contains every information used by in-toto's verification
-workflow from in-toto link metadata. We believe that building this out will go a
-long way to improving in-toto's usability and a sense of the minimum set of
-attestations necessary to secure software supply chains as per current
-standards.
+### Witness
 
-### ITE-7
+- [Donation](https://github.com/in-toto/community/issues/17) of the project to in-toto during KubeCon '23 - Chicago
+- Improvement of [CLO Monitor Scores](https://clomonitor.io/projects/cncf/in-toto#witness) to 99+
+- Support for generating new types of attestations:
+  - [SLSA Attestor](https://witness.dev/docs/docs/attestors/slsa)
+  - [Link Attestor](https://witness.dev/docs/docs/attestors/link)
+  - [Jenkins Attestor](https://github.com/in-toto/go-witness/pull/323)
+  - [SBOM Attestor](https://witness.dev/docs/docs/attestors/sbom)
+  - [VEX Attestor](https://witness.dev/docs/docs/attestors/vex)
+- Support for new Key Management Systems (KMS)
+  - [AWS KMS](https://witness.dev/docs/docs/signers/kms#aws)
+  - [GCP KMS](https://witness.dev/docs/docs/signers/kms#gcp)
+- New documentation [website](https://witness.dev/)
 
-As noted before, this ITE introduced the use of X.509 certificates in in-toto.
-This ITE has been implemented in in-toto-golang and other implementations such
-as TestifySec's Witness. After another round of reviews at KubeCon late last
-year, this ITE is also nearing acceptance. Depending on when implementations
-that prototype this ITE get updated, we expect ITE-7 to be accepted either in
-the first or second review periods.
+### Archivista
 
-## in-toto Attestations
+- [Donation](https://github.com/in-toto/community/issues/18) of the project to in-toto during KubeCon '23 - Chicago
+- Improvement of [CLO Monitor Score](https://clomonitor.io/projects/cncf/in-toto#archivista) to 95+
+- Helm [charts](https://github.com/in-toto/archivista/tree/main/chart) for deployment
+- Support for [eventing](https://github.com/in-toto/archivista/pull/377) on attestation uploads
+- Storing of Witness [Policies](https://github.com/in-toto/archivista/pull/251)
 
-Apart from the task of reviewing and providing feedback for the development of
-new attestation types, the attestation maintainers also plan to work on updating
-and maintaining the in-toto attestation specification itself. There are several
-tasks planned as part of this effort. Some broad plans are:
-* addressing ongoing discussions and issues pertaining to the attestation
-  framework
-* improving the discoverability of reviewed (ITE-9) predicates
-* creating language-independent definitions of reviewed predicates to streamline
-  their adoption
+### Others
 
-## in-toto Implementations
+- Docs [assessment](https://github.com/cncf/techdocs/blob/main/analyses/0009-in-toto/README.md) from CNCF Tech Docs group
+- [Donation](https://github.com/in-toto/community/issues/14) of [attestation-verifier](https://github.com/in-toto/attestation-verifier)
+- [Donation](https://github.com/in-toto/community/issues/11) of [scai-demos](https://github.com/in-toto/scai-demos)
 
-Several of in-toto's implementations were updated with support for various ITEs
-in the last year. The Python reference implementation is close to receiving
-support for DSSE. in-toto-java and in-toto-rs were updated with support for ITEs
-5 and 6. We plan to continue working on our implementations to support new and
-existing ITEs. This will greatly aid us as we develop integrations with other
-projects and foster adoption in various organizations.
+## Near and Mid-term Work
 
-In particular, we plan to work on the Python reference implementation to support
-ITE-6 attestations. It is the only implementation that currently has no support
-for attestations, and this is because of the stability guarantees we make for
-it. The last year has showed us that in-toto attestations are reaching stability
-and when ITE-6 is accepted, it will be time to support attestations in the
-reference implementation as well.
+### Specification and In-toto Enhancements (ITEs)
 
-Our work on in-toto implementations will continue to be in conjunction with the
-development of ITEs. Some exciting projects we expect to work on this year are:
-* supporting in implementations for the layouts that can verify attestations
-* adding ITE-9 reviewed predicates to one or more implementations
-* improving usability and simplifying the deployment of in-toto and TUF (ITE-2)
-  in software supply chains
+- Formal acceptance of ITE-10 and ITE-11
 
-## Integrations
+### Attestations
 
-Over the years, in-toto has been integrated into various other tools and
-systems. We plan to continue supporting their development and collaborating with
-other software supply chain security stakeholders. We are excited about the work
-we're doing with projects like Keylime, GUAC, and Sigstore, and we hope to talk
-about it more over the course of this year.
+- Continued work to build out library of common predicate types
+- Documentation on best practices and considerations in choosing when to use a specific predicate type when there may be multiple similar options
 
-Integrations we maintain ourselves will continue to get new features and
-support. Our Jenkins plugin recently received the capability to generate SLSA
-Provenance alongside its support for in-toto link metadata.
+### Witness
 
-## Community
+- Support for ITE-10 and ITE-11-style policies
+- New attestor types
+  - OmniTrail: based on the Omnibor project
+  - Lockfile: Storing contents of common language lock files
+- Support for Sigstore bundle format during signing
+- Continued documentation updates
+- A framework to allow external attestors
+- TUF Client to securely receive up-to-date policies from Archivista
 
-One of the efforts that has already started is a revamp of how the in-toto
-community is managed. A new starting point for all things in-toto was set up
-recently: https://github.com/in-toto/community. We believe this will help
-summarize the various in-toto projects and implementations in one place, as well
-as describe aspects of the community such as its governance, meeting cadence,
-contributing guidelines, and more.
+### Archivista
 
-## Roadmap Review Schedule
+- Integration with RSTUF
+  - Policies: the ability to store, approve, and revoke trust in Witness policies via TUF metadata
+  - Attestations: the ability to store, approve, and revoke trust in attestations via TUF metadata
 
-We have a new release schedule for our reviews as our roadmap now applies to the
-calendar year.
+### Others
 
-- End of April 2023
-- End of August 2023
-- End of December 2023
+Policy WG continuing collaboration on new policy specification, moving ITE-10 and ITE-11 towards acceptance
 
-We will use these slots to release our roadmap reviews and depending on the
-development of various features, reviews may be accompanied by releases of our
-implementations.
+## Long-term Work
+
+- Deprecate in-toto golang
+- Documentation and Github repository restructuring
+- Consolidate cryptographic signing libraries
+- Continued collaboration and integration with open source build and security tools
