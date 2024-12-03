@@ -25,6 +25,15 @@ stand-alone specification that defines the attestation format. An in-toto
 attestation is a piece of authenticated metadata that captures information about
 a set of software artifacts. The attestation framework was introduced in ITE-6.
 
+
+### attestation-verifier
+
+Attestation-verifier is a prototype of verification capabilities introduced in
+in-toto enhancements 10 and 11. 
+
+* [GitHub Repository](https://github.com/in-toto/attestation-verifier)
+
+
 ## Implementations
 
 The in-toto maintainers oversee the development of four implementations of the
@@ -73,6 +82,27 @@ Links:
 * [GitHub Repository](https://github.com/in-toto/in-toto-rs)
 * [Good First Issues](https://github.com/in-toto/in-toto-rs/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
 
+## User & Client Libraries and Tools 
+
+### Witness
+
+Witness is a dynamic CLI tool that integrates into pipelines and infrastructure to create an audit trail for your software's entire journey through the software development lifecycle (SDLC) using the in-toto specification. In addition Witness also features its own policy engine with embedded support for OPA Rego, so you can ensure that your software was handled safely from source to deployment.
+
+Links:
+* [GitHub Repository (cli tool)](https://github.com/in-toto/witness)
+* [GitHub Repository (library)](https://github.com/in-toto/go-witness)
+* [Good First Issues (cli tool)](https://github.com/in-toto/witness/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
+* [Good First Issues (library)](https://github.com/in-toto/go-witness/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
+* [Website](https://witness.dev)
+
+### Archivista 
+
+Archivista is a graph and storage service for in-toto attestations. Archivista enables the discovery and retrieval of attestations for software artifacts.
+
+Links:
+* [GitHub Repository](https://github.com/in-toto/archivista)
+* [Good First Issues](https://github.com/in-toto/archivista/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
+
 ## Adopters and other repositories of note
 
 in-toto is integrated into several other ecosystems and complementary software
@@ -83,6 +113,7 @@ adoptions is maintained in the
 The project maintains several integrations and resources pertaining to in-toto
 such as:
 * [in-toto Jenkins Plugin](https://github.com/jenkinsci/in-toto-plugin/)
+* [in-toto Helm Charts](https://github.com/in-toto/helm-charts/)
 * [Dockerfiles](https://github.com/in-toto/Dockerfiles)
 * [in-toto Grafeas Connector](https://github.com/in-toto/totoify-grafeas)
 * [Debian apt in-toto transport](https://github.com/in-toto/apt-transport-in-toto)
