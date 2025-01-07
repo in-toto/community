@@ -58,6 +58,12 @@ The ITSC adheres to the following:
 
 For more information about the ITSC, please refer to the [ITSC Charter](CHARTER.md)
 
+### Onboarding and Offboarding (All Roles)
+
+Onboarding will be performed by granting permissions to the relevant repositories.   To ease onboarding, any incoming members will have the opportunity to discuss the role with a member who is or has served in that role.
+
+Offboarding is effectively the opposite process, whereby now-uneeded permissions are removed.   The departing member is encouraged to transfer any incomplete tasks by coordinating with other members, memorializing them in issues, or similar mechanisms.
+
 ## Decision Making
 
 Maintainer and ITSC decisions are made by a [lazy consensus](http://rave.apache.org/docs/governance/lazyConsensus.html) approach. When formal voting is required, members may abstain. Negative votes must be accompanied by an explanation or alternative proposal.
