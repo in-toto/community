@@ -103,6 +103,33 @@ Links:
 * [GitHub Repository](https://github.com/in-toto/archivista)
 * [Good First Issues](https://github.com/in-toto/archivista/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22)
 
+
+## How is in-toto differentiated in the Cloud Native landscape?   What does it do differently and why?
+
+One of the most pressing security problems in cloud native is software supply chain security.  in-toto  addresses this issue by providing a secure and trustworthy means for representing all the operations within the cloud-native pipeline and verifying that they were carried out to the letter.
+A good way to understand the need for in-toto in the Cloud Native space is to understand the value of signed SBOMs vs in-toto metadata + layouts.  A signed SBOM indicates that some party (whose key you presumably have a reason to trust) states what the software contains.  In contrast, in-toto will have signed information about the individual steps of the supply chain cryptographically linking metadata together from various parties and validating this all against the software’s policies.  As a result, their protection modes would work quite differently in many cases.  For example, see the following table:
+
+
+| Attack scenario |   Signed SBOM Result | In-toto layout + metadata result |
+|-----------------|----------------------|----------------------------------|
+| Software manipulated after software supply chain completed | Detect and reject the malicious software | Detect and reject the malicious software |
+| Attacker compromises VCS and inserts malicious (unsigned) code where signatures are required  |Undetected.  User compromised. | Detect and reject the malicious software |
+| Attacker substitutes a malicious dependency (not signed by that dependeny’s maintainer) |Undetected.  User compromised. | Detect and reject the malicious software 
+| Attacker provides files to the build system which did not come from the VCS | Undetected.  User compromised | Detect and reject the malicious software |
+| Attacker containerizes / packages binaries other than the ones the build system built | Undetected.  User compromised | Detect and reject the malicious software |
+| Tests are not run on the software but it is (accidentally?) released to production | Undetected.  User compromised | Detect and reject the malicious software |
+| The legal team has not reviewed source code licenses for included libraries | Undetected.  Impact varies | Detect and reject the software |
+
+One important thing to note about the table above is that it isn’t impossible for someone to do many of these steps and checks before signing an SBOM.  If you did all of these checks, and signed the statements saying you did them to provide stronger validation, and distributed the root of trust for your signatures in a secure way, and managed situations where signing keys need to be revoked / rotated / expired, and handled trust delegation to different parties, and linked metadata between steps together, and let people write policies to reason about those steps, and let them link metadata in from dependencies to do so, and handled all of the above in scenarios where insiders can be maliciously interfering with your, system, then you would effectively reconstruct in-toto.
+We are aware of some efforts, like the Zephyr project, where project members have worked to try to reconstruct some of the guarantees of in-toto and decided to live with the gaps in their security for other portions.  For groups that have done this work already this does make sense to us as a viable alternative in the short term.  However, we do believe that using a common, holistic approach like in-toto will be necessary as projects continually add the missing security pieces from in-toto and want to reason more and more about each other as dependencies.
+
+Note that in-toto is not a substitute for having appropriately secure steps in the software supply chain.  For example, if you use an insecure process of building software that just curls and builds software from a website, in-toto will happily sign metadata indicating that you did the same insecure action indicated you would.  
+
+This is why projects like SLSA and FRSCA are built as an opinionated set of steps on top of in-toto.  They specify which actions they feel are more important for software supply chain security and mandate their use.  
+
+These projects are solving different problems at different levels.  In-toto allows you to capture information about your steps, ensure policies about them are applied, handle trust of keys, etc.  Frameworks like SLSA and FRSCA use in-toto as a mechanism to capture and enforce a specific set of policies 
+
+
 ## Adopters and other repositories of note
 
 in-toto is integrated into several other ecosystems and complementary software
@@ -120,3 +147,4 @@ such as:
 
 Contributions are welcome to these projects and any other repository in the
 [in-toto GitHub organization](https://github.com/in-toto).
+
