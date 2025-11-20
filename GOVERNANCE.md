@@ -38,7 +38,7 @@ The process for nominating and approving Maintainers is:
 
 ### The in-toto Steering Committee (ITSC)
 
-The in-toto Project is governed by the [ITSC](https://github.com/in-toto/community/blob/main/ITSC.md) that is exclusively responsible for in-toto's [specification](https://github.com/in-toto/docs), [enhancements](https://github.com/in-toto/in-toto/ite), the [attestation framework](https://github.com/in-toto/attestation), and the Project's strategic goals and direction. ITSC members have final authority over:
+The in-toto Project is governed by the [ITSC](https://github.com/in-toto/community/blob/main/STEERING-COMMITTEE.md) that is exclusively responsible for in-toto's [specification](https://github.com/in-toto/docs), [enhancements](https://github.com/in-toto/in-toto/ite), the [attestation framework](https://github.com/in-toto/attestation), and the Project's strategic goals and direction. ITSC members have final authority over:
 
 * Technical direction of the Project and subprojects
 * Project governance and process (this document)
