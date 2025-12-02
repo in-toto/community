@@ -21,12 +21,6 @@ Affiliation: ControlPlane (industry)
 
 GitHub: @06kellyjac
 
-## Cole Kennedy
-
-Affiliation: TestifySec (industry)
-
-GitHub: @colek42
-
 ## Trishank Karthik Kuppusamy
 
 Affiliation: Datadog (industry)
