@@ -15,7 +15,7 @@ See nomination [thread](https://github.com/in-toto/community/issues/50)
 
 Two candidates were nominated:
 
-- Aditya S Yelgunhalli (Bloomberg)
+- Aditya Sirish A Yelgundhalli (Bloomberg)
 - John Kjell (Control Plane)
 
 In adition, a third candidate was nominated after the nomination period, which
