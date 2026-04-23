@@ -11,17 +11,14 @@ Two seats were available:
 
 ## Candidates
 
-See nomination [thread](https://github.com/in-toto/community/issues/50)
+See nomination [thread](https://github.com/in-toto/community/issues/50).
 
 Two candidates were nominated:
 
 - Aditya Sirish A Yelgundhalli (Bloomberg)
 - John Kjell (Control Plane)
 
-In adition, a third candidate was nominated after the nomination period, which
-unfortunately disqualifies him:
-
-- Andrew McNamara (RedHat)
+Please refer to the issue above for further detail.
 
 ## Votes
 
