@@ -15,14 +15,20 @@ Affiliation: New York University (academia)
 
 GitHub: @JustinCappos
 
+## Aditya Sirish A Yelgundhalli
+
+Affiliation: Bloomberg (industry)
+
+GitHub: @adityasaky
+
 ## Jack Kelly
 
 Affiliation: ControlPlane (industry)
 
 GitHub: @06kellyjac
 
-## Trishank Karthik Kuppusamy
+## John Kjell
 
-Affiliation: Datadog (industry)
+Affiliation: ControlPlane (industry)
 
-GitHub: @trishankatdatadog
+GitHub: @jkjell
