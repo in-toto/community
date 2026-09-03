@@ -6,7 +6,7 @@ The following is strongly inspired by Numpy's and the Linux Kernel's guidance on
 
 While the in-toto project does not ban AI-based contributions, we require users to disclose the use of AI assistance. 
 Whether or not a user chooses to disclose the usage of AI, all submitted code must still meet the same quality standards *as if they had written it themselves*. 
-That is,submitted code that the author of a pull-request themselves does not understand may be automatically rejected regardless of AI use.
+That is, submitted code that the author of a pull-request themselves does not understand may be automatically rejected regardless of AI use.
 To reiterate: you write code however you want, but it is your responsibility to understand the code you submit.
 
 Further, *please disclose this information inside of the PR body* so as to help reviewers review accordingly.
